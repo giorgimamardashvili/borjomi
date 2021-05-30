@@ -1,0 +1,368 @@
+.menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 130px;
+  padding: 0 60px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  box-shadow: 0px 10px 30px rgba(55, 67, 92, 0.12);
+
+  @include xl {
+    padding: 0 20px;
+    height: 75px;
+  }
+
+  @include tab {
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    top: initial;
+    padding: 0;
+  }
+
+  &.scrolling {
+    height: 100px;
+
+    @include tab {
+      height: inherit;
+    }
+
+    .menu__middle {
+      height: 100%;
+      box-shadow: none;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+  &__left {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 40%;
+
+    @include tab {
+      justify-content: space-around;
+    }
+  }
+
+  &__contact {
+    @include tab {
+      display: none;
+    }
+  }
+
+  &__about {
+    @include tab {
+      display: none;
+    }
+  }
+  &__middle {
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    border-radius: 50%;
+    // position: relative;
+    // right: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 30px -28px #37435c;
+
+    @include xl {
+      width: 140px;
+      height: 140px;
+    }
+
+    @include tab {
+      height: 100%;
+      width: initial;
+    }
+
+    img {
+      width: 70%;
+      border-radius: 50%;
+
+      @include tab {
+        height: 100%;
+        width: initial;
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    height: 100%;
+    width: 40%;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include tab {
+      justify-content: space-around;
+    }
+
+    form {
+      display: flex;
+      height: 25%;
+
+      @include tab {
+        height: initial;
+      }
+
+      input {
+        width: 100px;
+
+        @include tab {
+          display: none;
+        }
+
+        &:hover {
+          width: 200px;
+          border-bottom: 1px $grey solid;
+        }
+
+        &::placeholder {
+          font-size: 16px;
+          color: $black;
+        }
+      }
+
+      button {
+        display: flex;
+        background: transparent;
+        margin-right: 15px;
+
+        @include tab {
+          display: none;
+        }
+      }
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-left: 60px;
+      border-left: 1px solid $grey;
+      cursor: pointer;
+
+      @include xl {
+        padding-left: 15px;
+      }
+
+      @include tab {
+        padding: 0;
+        border: none;
+      }
+
+      img {
+        &:first-child {
+          @include xl {
+            padding: 0 15px;
+          }
+
+          @include tab {
+            padding: 0;
+          }
+        }
+
+        &:last-child {
+          position: absolute;
+          bottom: 0;
+          right: 15px;
+
+          @include tab {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.left-menu {
+  &__menu {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 50px;
+    padding: 0 55px 0 0;
+    border-right: 1px solid $grey;
+    cursor: pointer;
+
+    @include xl {
+      padding-left: 15px;
+      padding: 0 15px 0 0;
+    }
+
+    @include tab {
+      padding: 0;
+      border: none;
+    }
+
+    p {
+      display: none;
+
+      &.active {
+        display: block;
+
+        @include tab {
+          display: none;
+        }
+      }
+    }
+
+    img {
+      display: none;
+
+      @include tab {
+        display: block;
+      }
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  &__block {
+    display: flex;
+
+    @include tab {
+      display: none;
+      width: 90%;
+      height: 137px;
+      border-radius: 20px;
+      background: #fff;
+      padding: 20px;
+      flex-direction: column;
+      position: fixed;
+      bottom: 90px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      justify-content: space-between;
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    div {
+      display: none;
+      width: 12px;
+      height: 12px;
+      border-radius: 0px 0px 3px 0px;
+      background: #fff;
+      transform: rotate(45deg);
+
+      @include tab {
+        display: initial;
+        position: absolute;
+        bottom: -6px;
+        left: 26%;
+      }
+    }
+  }
+  &__contact {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 50px;
+
+    @include xl {
+      padding-left: 15px;
+    }
+    @include tab {
+      border-bottom: 1px solid $grey;
+      padding: 0;
+    }
+
+    img {
+      margin-right: 15px;
+    }
+  }
+  &__about {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 50px;
+
+    @include xl {
+      padding-left: 15px;
+    }
+    @include tab {
+      padding: 0;
+    }
+
+    img {
+      margin-right: 15px;
+    }
+  }
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 14px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+
+    @include tab {
+      display: flex;
+    }
+    span {
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      background: #200e32;
+
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+
+    &.open {
+      span {
+        &:nth-child(1) {
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg) translateY(-2px);
+        }
+        &:nth-child(2) {
+          width: 0%;
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg) translateY(2px);
+        }
+      }
+    }
+  }
+
+  img {
+    padding: 0 15px;
+
+    @include tab {
+      padding: 0;
+    }
+  }
+}
+
+.form-img {
+  display: none;
+
+  @include tab {
+    display: initial;
+  }
+}

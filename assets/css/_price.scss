@@ -1,0 +1,28 @@
+.price {
+  display: flex;
+  align-items: flex-end;
+  &__new {
+    font-family: "Mon-bold";
+    font-size: calc(16px + (22 - 16) * ((100vw - 375px) / (1470 - 375)));
+    color: #222220;
+
+    margin-right: 10px;
+
+    span {
+      font-size: calc(13px + (18 - 13) * ((100vw - 375px) / (1470 - 375)));
+      font-family: "Mon-med";
+    }
+  }
+  &__old {
+    font-family: "Mon-bold";
+    font-size: calc(13px + (19 - 13) * ((100vw - 375px) / (1470 - 375)));
+    color: #222220;
+    opacity: 0.3;
+    text-decoration: line-through;
+
+    span {
+      font-size: calc(13px + (18 - 13) * ((100vw - 375px) / (1470 - 375)));
+      font-family: "Mon-med";
+    }
+  }
+}

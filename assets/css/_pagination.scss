@@ -1,0 +1,31 @@
+.pagination {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    color: $black;
+
+    @include m2 {
+      width: 36px;
+      height: 36px;
+    }
+
+    &:hover {
+      background: $yellow;
+    }
+
+    &.active {
+      background: $yellow;
+    }
+  }
+}

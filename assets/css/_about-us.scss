@@ -1,0 +1,35 @@
+.about-us {
+  &__wrapper {
+    justify-content: flex-end;
+  }
+  &__img {
+    margin: 0;
+    margin-left: 145px;
+
+    @include lg {
+      margin-left: 70px;
+    }
+
+    @include tab {
+      margin: 0;
+      margin-bottom: 15px;
+    }
+  }
+  &__text {
+    order: -1;
+
+    @include tab {
+      order: 0;
+    }
+
+    a {
+      display: flex;
+      background-color: $yellow;
+      color: $black;
+    }
+
+    p {
+      font-family: "lt-light", sans-serif;
+    }
+  }
+}

@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__time">
+                სამუშაო საათები: 24/7
+            </div>
+            <div class="header__info">
+                <div class="header__tel">
+                    <img src="assets/img/icons/tel.svg" alt="">
+                    <p>+995 555 444 333</p>
+                </div>
+                <div class="header__mail">
+                    <img src="assets/img/icons/message-white.svg" alt="">
+                    <p>example@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        
+
+    </header>
+    <section class=" menu" id="menu">
+        <div class="menu__left left-menu">
+            <a class="left-menu__menu">
+                <p class="active">მენიუ</p> 
+                <img src="assets/img/icons/Category.svg" alt="">
+            </a>
+            <div class="left-menu__block">
+                <a href="contacts.html" class="left-menu__contact">
+                    <img src="assets/img/icons/message-black.svg" alt="">
+                    <p>კონტაქტი</p>
+                </a>
+                <a href="aboutus-page.html" class="left-menu__about">
+                    <img src="assets/img/icons/message-black.svg" alt="">
+                    <p>ჩვენ შესახებ</p>
+                </a>
+                <div></div>
+            </div>
+            <div class="left-menu__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <a href="index.html" class="menu__middle">
+            <img src="assets/img/icons/Caffe_Borjomi_Logo.svg" alt="">
+        </a>
+        <div class="menu__right">
+            <form id="menuSearch" >
+                <img class="form-img" src="assets/img/icons/search.svg" alt="">
+                <button type="submit">
+                    <img src="assets/img/icons/search.svg" alt="">
+                </button>  
+                <input type="text" placeholder="ძებნა">
+                 
+            </form>
+            <div id="shopping">
+                <img src="assets/img/icons/shop.svg" alt="">
+                <img src="assets/img/icons/Ellipse 1.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="nav">
+        <div class="nav__black"></div>
+        <div class="nav__menu">
+            <img id="navClose" src="assets/img/icons/Plus.svg" alt="" >
+            <div class="nav__wrapper">
+                <a href="">შაურმა</a>
+                <a href="">ცივი კერძები</a>
+                <a href="">ცხელი კერძები</a>
+                <a href="">სალათები</a>
+                <a href="">ცომეული</a>
+                <a href="">გარნირი</a>
+                <a href="">გამომცხვარი პროდუქცია</a>
+                <a href="">სოუსები</a>
+                <a href="">დესერტი</a>
+                <a href="">სასმელები</a>
+                <a href="">ალკოჰოლური სასმელები</a>
+                <a href="">სხვადასხვა</a>
+                <a href="">მარკეტი</a>
+                <a href="categories.html">ყველას ნახვა</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <form class="search" id="searchForm">
+        <input type="text" placeholder="ძებნა…">
+    </form>
+
+    <div class="modal-black"></div>
+
+    <section class="basket">
+        <img class="basket__close" src="assets/img/icons/Plus.svg" alt="">
+        <div class="basket__head">
+            <h3>კალათა</h3>
+            <span>6 პროდუქტი</span>
+        </div>
+        <div class="basket__container">
+            <div class="basket__item">
+                <div class="basket-img">
+                    <img src="assets/img/pasta.jpg" alt="">
+                    <div class="hover-background"></div>
+                    <img class="hover-img" src="assets/img/icons/Group 62.svg" alt="">
+                </div>
+                <div class="basket__text">
+                    <p class="name">პასტა</p>
+                    <div class="basket__ingredients">
+                        <p>მოცარელა <span>(meti),</span></p>
+                        <p>მოცარელა <span>(meti),</span></p>
+                        <p>მოცარელა <span>(meti),</span></p>
+                        <p>მოცარელა <span>(meti),</span></p>
+                        <p>მოცარელა <span>(meti),</span></p>
+                        <p>მოცარელა <span>(meti),</span></p>
+                        <p>მოცარელა <span>(meti),</span></p>
+                        <p>მოცარელა <span>(meti),</span></p>
+                        <p>მოცარელა <span>(meti),</span></p>
+                        <p>მოცარელა <span>(meti),</span></p>
+                        <p>მოცარელა <span>(meti),</span></p>
+                        <p>მოცარელა <span>(meti),</span></p>
+                    </div>
+                    <p class="price__new">23.70 ₾</p>
+                </div>
+                <div class="basket__spinner spinner">
+                    <div class="spinner__wrapper">
+                        <button class="minus">
+                            <p></p>
+                        </button>
+                        <div class="spinner__num">
+                            <span>x</span><input type="text" value="1">
+                        </div>
+                        
+                        <button class="plus">
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <a href=""><img src="assets/img/icons/Delete.svg" alt=""></a>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="basket__item">
+                <div class="basket-img">
+                    <img src="assets/img/pasta.jpg" alt="">
+                    <div class="hover-background"></div>
+                    <img class="hover-img" src="assets/img/icons/Group 62.svg" alt="">
+                </div>
+                <div basket-text>
+                    <p class="name">პასტა</p>
+
+                    <p class="price__new">23.70 ₾</p>
+                </div>
+                <div class="basket__spinner">
+                    <div>
+                        <button class="minus">
+                            <p></p>
+                        </button>
+                        <input type="text" value="1">
+                        <button class="plus">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    
+                    <a href=""><img src="assets/img/icons/Delete.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="basket__item">
+                <div class="basket-img">
+                    <img src="assets/img/pasta.jpg" alt="">
+                    <div class="hover-background"></div>
+                    <img class="hover-img" src="assets/img/icons/Group 62.svg" alt="">
+                </div>
+                <div basket-text>
+                    <p class="name">პასტა</p>
+                    <p class="price__new">23.70 ₾</p>
+                </div>
+                <div class="basket__spinner">
+                    <div>
+                        <button class="minus">
+                            <p></p>
+                        </button>
+                        <input type="text" value="1">
+                        <button class="plus">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    
+                    <a href=""><img src="assets/img/icons/Delete.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="basket__item">
+                <div class="basket-img">
+                    <img src="assets/img/pasta.jpg" alt="">
+                    <div class="hover-background"></div>
+                    <img class="hover-img" src="assets/img/icons/Group 62.svg" alt="">
+                </div>
+                <div basket-text>
+                    <p class="name">პასტა</p>
+                    <p class="price__new">23.70 ₾</p>
+                </div>
+                <div class="basket__spinner">
+                    <div>
+                        <button class="minus">
+                            <p></p>
+                        </button>
+                        <input type="text" value="1">
+                        <button class="plus">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    
+                    <a href=""><img src="assets/img/icons/Delete.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="basket__item">
+                <div class="basket-img">
+                    <img src="assets/img/pasta.jpg" alt="">
+                    <div class="hover-background"></div>
+                    <img class="hover-img" src="assets/img/icons/Group 62.svg" alt="">
+                </div>
+                <div basket-text>
+                    <p class="name">პასტა</p>
+                    <p class="price__new">23.70 ₾</p>
+                </div>
+                <div class="basket__spinner">
+                    <div>
+                        <button class="minus">
+                            <p></p>
+                        </button>
+                        <input type="text" value="1">
+                        <button class="plus">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    
+                    <a href=""><img src="assets/img/icons/Delete.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="basket__item">
+                <div class="basket-img">
+                    <img src="assets/img/pasta.jpg" alt="">
+                    <div class="hover-background"></div>
+                    <img class="hover-img" src="assets/img/icons/Group 62.svg" alt="">
+                </div>
+                <div basket-text>
+                    <p class="name">პასტა</p>
+                    <p class="price__new">23.70 ₾</p>
+                </div>
+                <div class="basket__spinner">
+                    <div>
+                        <button class="minus">
+                            <p></p>
+                        </button>
+                        <input type="text" value="1">
+                        <button class="plus">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    
+                    <a href=""><img src="assets/img/icons/Delete.svg" alt=""></a>
+                </div>
+            </div>
+           
+            
+        </div>
+        <div class="basket__bottom">
+            <div class="basket__info">
+                <div class="basket__price">
+                    <span>ჯამში:</span>
+                    <p class="price__new">123.70 ₾</p>
+                </div>
+                <a class="basket__clear">კალათის გასუფთავება</a>
+            </div>
+            <a href="basket-page.html" class="basket__continue">შეკვეთის გაფორმება</a>
+        </div>
+    </section>
+
+    <section class="changing-ingr">
+        <div class="changing-ingr__wrapper">
+            <div class="changing-ingr__close">
+                <img src="assets/img/icons/Plus.png" alt="">
+            </div>
+            <div class="changing-ingr__question">
+                <p>იგივე იგრედიენტებით გსურთ თუ შევცვალოთ?</p>
+                <div class="changing-ingr__buttons">
+                    <a class="same" href="">იგივე</a>
+                    <a class="change">ცვლილება</a>
+                </div>
+                
+            </div>
+            <div class="changing-ingr__choose choose-ingr">
+                <p>იგრედიენტების ცვლილება</p>
+                <div class="choose-ingr__item">
+                    <h3>წიწაკა</h3>
+                    <div class="choose-ingr__wrapper">
+                        <label class="choose-ingr__container">
+                            <input type="radio" checked="checked" name="pepper">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">ნაკლები</span>
+                        </label>
+                        <label class="choose-ingr__container">
+                            <input type="radio" name="pepper">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">მეტი</span>
+                        </label>
+                        <label class="choose-ingr__container">
+                            <input type="radio" name="pepper">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">წიწაკის გარეშე</span>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="choose-ingr__item">
+                    <h3>მაიონეზი</h3>
+                    <div class="choose-ingr__wrapper">
+                        <label class="choose-ingr__container">
+                            <input type="radio" checked="checked" name="mayonnaise">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">ნაკლები</span>
+                        </label>
+                        <label class="choose-ingr__container">
+                            <input type="radio" name="mayonnaise">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">მეტი</span>
+                        </label>
+                        <label class="choose-ingr__container">
+                            <input type="radio" name="mayonnaise">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">მაიონეზი გარეშე</span>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="choose-ingr__item">
+                    <h3>კეჩუპი</h3>
+                    <div class="choose-ingr__wrapper">
+                        <label class="choose-ingr__container">
+                            <input type="radio" checked="checked" name="ketchup">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">ნაკლები</span>
+                        </label>
+                        <label class="choose-ingr__container">
+                            <input type="radio" name="ketchup">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">მეტი</span>
+                        </label>
+                        <label class="choose-ingr__container">
+                            <input type="radio" name="ketchup">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">კეჩუპის გარეშე</span>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="choose-ingr__item">
+                    <h3>ხახვი</h3>
+                    <div class="choose-ingr__wrapper">
+                        <label class="choose-ingr__container">
+                            <input type="radio" checked="checked" name="onion">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">ნაკლები</span>
+                        </label>
+                        <label class="choose-ingr__container">
+                            <input type="radio" name="onion">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">მეტი</span>
+                        </label>
+                        <label class="choose-ingr__container">
+                            <input type="radio" name="onion">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">ხახვის გარეშე</span>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="choose-ingr__item">
+                    <h3>პომიდორი</h3>
+                    <div class="choose-ingr__wrapper">
+                        <label class="choose-ingr__container">
+                            <input type="radio" checked="checked" name="tomato">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">ნაკლები</span>
+                        </label>
+                        <label class="choose-ingr__container">
+                            <input type="radio" name="tomato">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">მეტი</span>
+                        </label>
+                        <label class="choose-ingr__container">
+                            <input type="radio" name="tomato">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">პომიდვრის გარეშე</span>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="choose-ingr__item">
+                    <h3>სალათა</h3>
+                    <div class="choose-ingr__wrapper">
+                        <label class="choose-ingr__container">
+                            <input type="radio" checked="checked" name="salad">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">ნაკლები</span>
+                        </label>
+                        <label class="choose-ingr__container">
+                            <input type="radio" name="salad">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">მეტი</span>
+                        </label>
+                        <label class="choose-ingr__container">
+                            <input type="radio" name="salad">
+                            <span class="choose-ingr__checkmark"></span>
+                            <span class="choose-ingr__name">სალათის გარეშე</span>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="choose-ingr__check">
+                    <label class="choose-ingr__container">
+                        <input type="checkbox">
+                        <span class="choose-ingr__checkmark"></span>
+                        <span class="choose-ingr__name">მეტი მარილი</span>
+                    </label>
+                    <label class="choose-ingr__container">
+                        <input type="checkbox">
+                        <span class="choose-ingr__checkmark"></span>
+                        <span class="choose-ingr__name">წიწაკა ცალკე</span>
+                    </label>
+                </div>
+                <a href="" class="choose-ingr__add">დამატება</a>
+                
+
+            </div>
+        </div>
+    </section>
+
+
+    <main class="main">
+       <section class="single-product">
+           <div class="single-product__swiper">
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="assets/img/burger.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="assets/img/burger.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="assets/img/burger.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="assets/img/burger.jpg" alt="">
+                  </div>
+                 
+                </div>
+
+              </div>
+              <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="assets/img/burger.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="assets/img/burger.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="assets/img/burger.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="assets/img/burger.jpg" alt="">
+                  </div>
+                 
+                 
+                </div>
+              </div>
+           </div>
+           <div class="single-product__info">
+               <div class="single-product__wrapper">
+                <h2>მეჯიქ ბურგერი</h2>
+                <div class="price">
+                    <div class="price__new">243.<span>70 ₾</span> </div>
+                    <div class="price__old">243.<span>70 ₾</span> </div>
+                </div>
+                <div class="single-product__choose">
+                    <div>აირჩიე რაოდენობა</div>
+                    <div class="basket__spinner">
+                        <div>
+                            <button class="minus">
+                                <p></p>
+                            </button>
+                            <input type="text" value="1">
+                            <button class="plus">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product__text">
+                    ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე გამეორებადი სიტყვებია ხოლმე.
+                </div>
+                <a class="single-product__button">
+                    კალათაში დამატება
+                </a>
+               </div>
+                
+           </div>
+       </section>
+       <section class="alike-products">
+           <div class="container">
+               <h2>მსგავსი პროდუქცია</h2>
+               <div class="alike-products__buttons">
+                    <div class="swiper-button-prev alike-products__prev">
+                        <img src="assets/img/icons/Arrow - Left.svg" alt="">
+                    </div>
+                    <div class="swiper-button-next alike-products__next">
+                        <img src="assets/img/icons/Arrow - Right.svg" alt="">
+                    </div>
+               </div>
+               
+               <div class="swiper-container alike-products__container">
+                
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                        <a href=""><img src="assets/img/pizza.jpg" alt=""></a>
+                        <div class="products__info">
+                            <div class="products__details">
+                                <p>პიცა 4 ყველით</p>
+                                <div class="price ">
+                                    <div class="price__new">243.70 ₾</div>
+                                    <div class="price__old">243.70 ₾</div>
+                                </div>
+                            </div>
+                            <div class="products__add">
+                                <img src="assets/img/icons/shop-red.svg" alt="">
+                                <span>კალათაში დამატება</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                        <a href=""><img src="assets/img/pizza.jpg" alt=""></a>
+                        <div class="products__info">
+                            <div class="products__details">
+                                <p>პიცა 4 ყველით</p>
+                                <div class="price ">
+                                    <div class="price__new">243.70 ₾</div>
+                                    <div class="price__old">243.70 ₾</div>
+                                </div>
+                            </div>
+                            <div class="products__add">
+                                <img src="assets/img/icons/shop-red.svg" alt="">
+                                <span>კალათაში დამატება</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                        <a href=""><img src="assets/img/pizza.jpg" alt=""></a>
+                        <div class="products__info">
+                            <div class="products__details">
+                                <p>პიცა 4 ყველით</p>
+                                <div class="price ">
+                                    <div class="price__new">243.70 ₾</div>
+                                    <div class="price__old">243.70 ₾</div>
+                                </div>
+                            </div>
+                            <div class="products__add">
+                                <img src="assets/img/icons/shop-red.svg" alt="">
+                                <span>კალათაში დამატება</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                        <a href=""><img src="assets/img/pizza.jpg" alt=""></a>
+                        <div class="products__info">
+                            <div class="products__details">
+                                <p>პიცა 4 ყველით</p>
+                                <div class="price ">
+                                    <div class="price__new">243.70 ₾</div>
+                                    <div class="price__old">243.70 ₾</div>
+                                </div>
+                            </div>
+                            <div class="products__add">
+                                <img src="assets/img/icons/shop-red.svg" alt="">
+                                <span>კალათაში დამატება</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                        <a href=""><img src="assets/img/pizza.jpg" alt=""></a>
+                        <div class="products__info">
+                            <div class="products__details">
+                                <p>პიცა 4 ყველით</p>
+                                <div class="price ">
+                                    <div class="price__new">243.70 ₾</div>
+                                    <div class="price__old">243.70 ₾</div>
+                                </div>
+                            </div>
+                            <div class="products__add">
+                                <img src="assets/img/icons/shop-red.svg" alt="">
+                                <span>კალათაში დამატება</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                        <a href=""><img src="assets/img/pizza.jpg" alt=""></a>
+                        <div class="products__info">
+                            <div class="products__details">
+                                <p>პიცა 4 ყველით</p>
+                                <div class="price ">
+                                    <div class="price__new">243.70 ₾</div>
+                                    <div class="price__old">243.70 ₾</div>
+                                </div>
+                            </div>
+                            <div class="products__add">
+                                <img src="assets/img/icons/shop-red.svg" alt="">
+                                <span>კალათაში დამატება</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+              
+              </div>
+           </div>
+       </section>
+       <section class="alike-products">
+           <div class="container">
+               <h2>სხვა პროდუქცია</h2>
+               <div class="alike-products__buttons">
+                    <div class="swiper-button-prev other-products__prev">
+                        <img src="assets/img/icons/Arrow - Left.svg" alt="">
+                    </div>
+                    <div class="swiper-button-next other-products__next">
+                        <img src="assets/img/icons/Arrow - Right.svg" alt="">
+                    </div>
+               </div>
+               
+               <div class="swiper-container other-products__container">
+                
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                        <a href=""><img src="assets/img/pizza.jpg" alt=""></a>
+                        <div class="products__info">
+                            <div class="products__details">
+                                <p>პიცა 4 ყველით</p>
+                                <div class="price ">
+                                    <div class="price__new">243.70 ₾</div>
+                                    <div class="price__old">243.70 ₾</div>
+                                </div>
+                            </div>
+                            <div class="products__add">
+                                <img src="assets/img/icons/shop-red.svg" alt="">
+                                <span>კალათაში დამატება</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                        <a href=""><img src="assets/img/pizza.jpg" alt=""></a>
+                        <div class="products__info">
+                            <div class="products__details">
+                                <p>პიცა 4 ყველით</p>
+                                <div class="price ">
+                                    <div class="price__new">243.70 ₾</div>
+                                    <div class="price__old">243.70 ₾</div>
+                                </div>
+                            </div>
+                            <div class="products__add">
+                                <img src="assets/img/icons/shop-red.svg" alt="">
+                                <span>კალათაში დამატება</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                        <a href=""><img src="assets/img/pizza.jpg" alt=""></a>
+                        <div class="products__info">
+                            <div class="products__details">
+                                <p>პიცა 4 ყველით</p>
+                                <div class="price ">
+                                    <div class="price__new">243.70 ₾</div>
+                                    <div class="price__old">243.70 ₾</div>
+                                </div>
+                            </div>
+                            <div class="products__add">
+                                <img src="assets/img/icons/shop-red.svg" alt="">
+                                <span>კალათაში დამატება</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                        <a href=""><img src="assets/img/pizza.jpg" alt=""></a>
+                        <div class="products__info">
+                            <div class="products__details">
+                                <p>პიცა 4 ყველით</p>
+                                <div class="price ">
+                                    <div class="price__new">243.70 ₾</div>
+                                    <div class="price__old">243.70 ₾</div>
+                                </div>
+                            </div>
+                            <div class="products__add">
+                                <img src="assets/img/icons/shop-red.svg" alt="">
+                                <span>კალათაში დამატება</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                        <a href=""><img src="assets/img/pizza.jpg" alt=""></a>
+                        <div class="products__info">
+                            <div class="products__details">
+                                <p>პიცა 4 ყველით</p>
+                                <div class="price ">
+                                    <div class="price__new">243.70 ₾</div>
+                                    <div class="price__old">243.70 ₾</div>
+                                </div>
+                            </div>
+                            <div class="products__add">
+                                <img src="assets/img/icons/shop-red.svg" alt="">
+                                <span>კალათაში დამატება</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                        <a href=""><img src="assets/img/pizza.jpg" alt=""></a>
+                        <div class="products__info">
+                            <div class="products__details">
+                                <p>პიცა 4 ყველით</p>
+                                <div class="price ">
+                                    <div class="price__new">243.70 ₾</div>
+                                    <div class="price__old">243.70 ₾</div>
+                                </div>
+                            </div>
+                            <div class="products__add">
+                                <img src="assets/img/icons/shop-red.svg" alt="">
+                                <span>კალათაში დამატება</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+              
+              </div>
+           </div>
+       </section>
+       <section class="about-us service">
+        <div class="container">
+            <div class="about-us__wrapper service__wrapper">
+                <div class="about-us__img service__img">
+                    <div></div>
+                    <div></div>
+                    <img src="assets/img/Rectangle 12.jpg" alt="">
+                </div>
+                <div class="about-us__text service__text">
+                    <h2>მიტანის სერვისი</h2>
+                    <p>ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე გამეორებადი სიტყვებია ხოლმე.</p>
+                    <!-- <a href="" class="red">დეტალურად</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__left">
+                <p>ყველა უფლება დაცულია</p>
+                <div class="footer__socials">
+                    <a href=""><img src="assets/img/icons/facebook-box-line.svg" alt=""></a>
+                    <a href=""><img src="assets/img/icons/instagram-line.svg" alt=""></a>
+                    <a href=""><img src="assets/img/icons/twitter-line.svg" alt=""></a>
+                    <a href=""><img src="assets/img/icons/youtube-line.svg" alt=""></a>
+                </div>
+
+            </div>
+            <div class="footer__middle">
+                <img src="assets/img/Rectangle 68.jpg" alt="">
+                <img src="assets/img/icons/Group 42.svg" alt="">
+                <img src="assets/img/Rectangle 69.jpg"></img>
+            </div>
+            <div class="footer__right">
+                <p>დამზადებულია <a href="">Smart-web </a>-ის მიერ</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+          spaceBetween: 10,
+        //   slidesPerView: auto,
+          freeMode: true,
+          watchSlidesVisibility: true,
+          watchSlidesProgress: true,
+          allowTouchMove: false,
+          noSwiping: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+        //   spaceBetween: 10,
+          thumbs: {
+            swiper: galleryThumbs
+          }
+        });
+
+        const alikeSwiper = new Swiper('.alike-products__container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: "auto",
+            spaceBetween: 25,
+
+            // If we need pagination
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.alike-products__next',
+                prevEl: '.alike-products__prev',
+            },
+
+            // And if we need scrollbar
+        });
+
+        const otherSwiper = new Swiper('.other-products__container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: "auto",
+            spaceBetween: 25,
+
+            // If we need pagination
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.other-products__next',
+                prevEl: '.other-products__prev',
+            },
+
+            // And if we need scrollbar
+        });
+      </script>
+</body>
+</html>

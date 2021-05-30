@@ -1,0 +1,49 @@
+.categories {
+  padding-top: 40px;
+
+  @include m2 {
+    padding-top: 0;
+  }
+
+  &__choose {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    @include m2 {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      padding-top: 0;
+
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+  }
+  &__item {
+    border-radius: 23px;
+    background: #fff;
+    padding: 15px 25px;
+    color: $black;
+    margin-bottom: 10px;
+    white-space: nowrap;
+
+    &:hover {
+      background: $yellow;
+    }
+  }
+
+  &__products {
+    padding-top: 60px;
+
+    @include m2 {
+      padding-top: 0;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.footer {
+  width: 100%;
+  padding: 130px 0 60px 0;
+  background-color: $background;
+
+  @include tab {
+    padding-bottom: 130px;
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @include tab {
+      flex-direction: column;
+    }
+  }
+  &__left {
+    display: flex;
+
+    @include tab {
+      flex-direction: column;
+      align-items: center;
+      height: 90px;
+      justify-content: space-between;
+    }
+    p {
+      color: #131313;
+      margin-right: 25px;
+    }
+  }
+  &__middle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @include tab {
+      top: -55px;
+    }
+  }
+  &__right {
+    @include tab {
+      position: absolute;
+      top: 29px;
+    }
+    a {
+      color: $red;
+    }
+  }
+  &__socials {
+    a {
+      margin: 2.5px;
+    }
+  }
+}

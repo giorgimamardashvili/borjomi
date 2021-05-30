@@ -1,0 +1,9 @@
+.top-product {
+  width: 100%;
+  background-color: $background;
+  padding: 125px 0;
+
+  @include tab {
+    padding: 40px 0;
+  }
+}

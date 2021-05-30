@@ -1,0 +1,104 @@
+.alike-products {
+    // margin-top: 130px;
+    padding-bottom: 120px;
+
+    .container {
+        position: relative;
+    }
+
+    &__buttons {
+        width: 150px;
+        height: 60px;
+        position: absolute;
+        top: -15px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 0;
+
+        @include m2 {
+            width: 100px;
+        }
+    }
+
+    &__prev {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+
+        background: rgba(250, 224, 56, 0.1);
+
+        @include m2 {
+            width: 34px;
+            height: 34px;
+
+
+        }
+
+        &::after {
+            display: none;
+        }
+
+        &:hover {
+            background: rgba(250, 224, 56, 1);
+        }
+
+    }
+
+    &__next {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+
+        background: rgba(250, 224, 56, 0.1);
+
+        @include m2 {
+            width: 34px;
+            height: 34px;
+
+
+        }
+
+        &::after {
+            display: none;
+        }
+
+        &:hover {
+            background: rgba(250, 224, 56, 1);
+        }
+    }
+
+    .swiper-slide {
+        width: 341px;
+        height: 324px;
+
+        @include m2 {
+            width: 172px;
+            height: 253px;
+        }
+    }
+}
+
+.other-products__next, .other-products__prev {
+    width: 56px;
+        height: 56px;
+        border-radius: 50%;
+
+        background: rgba(250, 224, 56, 0.1);
+
+        @include m2 {
+            width: 34px;
+            height: 34px;
+
+
+        }
+
+        &::after {
+            display: none;
+        }
+
+        &:hover {
+            background: rgba(250, 224, 56, 1);
+        }
+}

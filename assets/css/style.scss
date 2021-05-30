@@ -1,0 +1,121 @@
+@import "fonts";
+@import "variable";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  border: 0;
+  resize: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: "Helv-bold", sans-serif;
+
+  @include xl {
+    font-size: calc(13px + (16 - 13) * ((100vw - 375px) / (1470 - 375)));
+  }
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1470px;
+  margin: auto;
+  padding: 0 15px;
+
+  @include rwd(400) {
+    padding: 0 10px;
+  }
+}
+
+.main {
+  background: $background;
+  padding: 50px 0 0 0;
+  min-height: calc(100vh - 407px);
+
+  @include tab {
+    padding: 20px 0 0 0;
+  }
+}
+
+h2 {
+  text-align: left;
+  font-size: calc(18px + (32 - 18) * ((100vw - 375px) / (1470 - 375)));
+  margin-bottom: 70px;
+  color: $black;
+
+  @include tab {
+    margin-bottom: 35px;
+  }
+}
+
+p {
+  color: $black;
+}
+
+.modal-black {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: none;
+  background: black;
+  opacity: 0.4;
+
+  &.active {
+    display: initial;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.red {
+  background-color: $red !important;
+  color: white !important;
+}
+
+@import "header";
+@import "menu";
+@import "main-slider";
+@import "top-product";
+@import "products";
+@import "price";
+@import "service";
+@import "choose-product";
+@import "about-us";
+@import "categories";
+@import "pagination";
+@import "search-result";
+@import "aboutus-page";
+@import "contact";
+@import "nav";
+@import "search";
+@import "basket";
+@import "single-product";
+@import "alike-products";
+@import "changing-ingr";
+@import "basket-page";
+@import "basket-modal";
+@import "nice-select";
+@import "checkbox-modal";
+@import "footer";

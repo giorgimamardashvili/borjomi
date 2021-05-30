@@ -1,0 +1,105 @@
+.nav {
+  position: fixed;
+  height: calc(100vh - 190px);
+  bottom: 0;
+  width: 100vw;
+  z-index: 6;
+  transition: transform 0.5s;
+  transform: translateX(-100vw);
+
+  @include xl {
+    height: calc(100vh - 115px);
+  }
+
+  @include tab {
+    height: 100vh;
+    top: 0;
+  }
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  &.scrolling {
+    height: calc(100vh - 100px);
+  }
+  &__black {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    transition: transform 0.5s;
+    transform: translateX(-100vw);
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+  &__menu {
+    height: 100%;
+    width: 460px;
+    padding: 78px 60px;
+    background: #fff;
+    transition: transform 0.5s;
+    transform: translateX(-460px);
+    position: absolute;
+    bottom: 0;
+
+    @include xl {
+      padding: 30px;
+    }
+
+    @include tab {
+      width: 273px;
+      padding: 0 30px;
+    }
+
+    &.active {
+      transform: translateX(0);
+    }
+
+    a {
+      color: $black;
+
+      &:last-child {
+        width: 178px;
+        height: 56px;
+        border-radius: 3.73px 28px 28px 28px;
+        background: $red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+
+        @include tab {
+          width: 168px;
+          height: 34px;
+        }
+      }
+    }
+
+    img {
+      display: none;
+      position: absolute;
+      left: 12px;
+      top: 40px;
+
+      @include tab {
+        display: initial;
+      }
+    }
+  }
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include tab {
+      height: 70%;
+      margin-top: 95px;
+    }
+  }
+}

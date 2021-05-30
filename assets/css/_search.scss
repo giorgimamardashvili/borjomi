@@ -1,0 +1,33 @@
+.search {
+  width: 90%;
+  height: 56px;
+  position: fixed;
+  top: 60px;
+  z-index: 6;
+  display: none;
+  left: 50%;
+  margin-left: -45%;
+  transform: translateY(-120px);
+  transition: transform 0.5s;
+
+  @include tab {
+    display: initial;
+  }
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  input {
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    background: #fff;
+    padding-left: 20px;
+
+    &::placeholder {
+      font-size: 14px;
+      color: $black;
+    }
+  }
+}

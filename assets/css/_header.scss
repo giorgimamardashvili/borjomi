@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 6;
+
+  &__top {
+    width: 100%;
+    height: 60px;
+    background-color: $red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+
+    @include xl {
+      padding: 0 20px;
+      height: 40px;
+    }
+
+    @include sm {
+      padding: 0 10px;
+    }
+  }
+
+  &__time {
+    color: #fff;
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+
+    @include tab {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+
+      &:not(:nth-child(2)) {
+        margin-right: 40px;
+
+        @include sm {
+          margin-right: 0;
+        }
+      }
+
+      img {
+        margin-right: 10px;
+      }
+
+      p {
+        color: #fff;
+      }
+    }
+  }
+}
